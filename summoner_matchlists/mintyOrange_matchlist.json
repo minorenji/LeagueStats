@@ -1,0 +1,468 @@
+{
+  "Matches": {
+    "3255197342": {
+      "Allies": {
+        "BadMonkeyZ": {
+          "Champion": "Fiora",
+          "Lane": "JUNGLE",
+          "Role": "none",
+          "Position": "JUNGLE",
+          "Kills": 6,
+          "Deaths": 7,
+          "Assists": 9,
+          "KDA": 2.14,
+          "Victory": true
+        },
+        "mintyOrange": {
+          "Champion": "Shaco",
+          "Lane": "JUNGLE",
+          "Role": "none",
+          "Position": "JUNGLE",
+          "Kills": 6,
+          "Deaths": 2,
+          "Assists": 8,
+          "KDA": 7.0,
+          "Victory": true
+        },
+        "Xenophon": {
+          "Champion": "Senna",
+          "Lane": "BOT_LANE",
+          "Role": "duo_support",
+          "Position": "SUPPORT",
+          "Kills": 16,
+          "Deaths": 8,
+          "Assists": 8,
+          "KDA": 3.0,
+          "Victory": true
+        },
+        "Ryanesgrande": {
+          "Champion": "Aphelios",
+          "Lane": "BOT_LANE",
+          "Role": "duo_carry",
+          "Position": "BOTTOM",
+          "Kills": 5,
+          "Deaths": 9,
+          "Assists": 11,
+          "KDA": 1.78,
+          "Victory": true
+        },
+        "Plusnine": {
+          "Champion": "Orianna",
+          "Lane": "MID_LANE",
+          "Role": "solo",
+          "Position": "MIDDLE",
+          "Kills": 12,
+          "Deaths": 5,
+          "Assists": 14,
+          "KDA": 5.2,
+          "Victory": true
+        }
+      },
+      "Enemies": {
+        "Noirespiders": {
+          "Champion": "Volibear",
+          "Lane": "JUNGLE",
+          "Role": "none",
+          "Position": "JUNGLE",
+          "Kills": 6,
+          "Deaths": 10,
+          "Assists": 9,
+          "KDA": 1.5,
+          "Victory": false
+        },
+        "Tony MontanaGG": {
+          "Champion": "Brand",
+          "Lane": "BOT_LANE",
+          "Role": "duo_support",
+          "Position": "SUPPORT",
+          "Kills": 9,
+          "Deaths": 11,
+          "Assists": 11,
+          "KDA": 1.82,
+          "Victory": false
+        },
+        "justregular": {
+          "Champion": "Tristana",
+          "Lane": "BOT_LANE",
+          "Role": "duo_carry",
+          "Position": "BOTTOM",
+          "Kills": 11,
+          "Deaths": 10,
+          "Assists": 7,
+          "KDA": 1.8,
+          "Victory": false
+        },
+        "IM RP": {
+          "Champion": "Zed",
+          "Lane": "MID_LANE",
+          "Role": "solo",
+          "Position": "MIDDLE",
+          "Kills": 0,
+          "Deaths": 2,
+          "Assists": 0,
+          "KDA": 0.0,
+          "Victory": false
+        },
+        "Didic": {
+          "Champion": "Nasus",
+          "Lane": "TOP_LANE",
+          "Role": "solo",
+          "Position": "TOP",
+          "Kills": 5,
+          "Deaths": 12,
+          "Assists": 10,
+          "KDA": 1.25,
+          "Victory": false
+        }
+      }
+    },
+    "3254078592": {
+      "Allies": {
+        "cyanntific": {
+          "Champion": "Swain",
+          "Lane": "BOT_LANE",
+          "Role": "duo_support",
+          "Position": "SUPPORT",
+          "Kills": 2,
+          "Deaths": 7,
+          "Assists": 6,
+          "KDA": 1.14,
+          "Victory": false
+        },
+        "mintyOrange": {
+          "Champion": "Shaco",
+          "Lane": "JUNGLE",
+          "Role": "none",
+          "Position": "JUNGLE",
+          "Kills": 8,
+          "Deaths": 7,
+          "Assists": 5,
+          "KDA": 1.86,
+          "Victory": false
+        },
+        "DarkPsychology": {
+          "Champion": "Yasuo",
+          "Lane": "MID_LANE",
+          "Role": "solo",
+          "Position": "MIDDLE",
+          "Kills": 2,
+          "Deaths": 5,
+          "Assists": 4,
+          "KDA": 1.2,
+          "Victory": false
+        },
+        "ItsRoman": {
+          "Champion": "Singed",
+          "Lane": "JUNGLE",
+          "Role": "none",
+          "Position": "JUNGLE",
+          "Kills": 0,
+          "Deaths": 13,
+          "Assists": 3,
+          "KDA": 0.23,
+          "Victory": false
+        },
+        "K1NGHUGH3S": {
+          "Champion": "Twitch",
+          "Lane": "BOT_LANE",
+          "Role": "duo_carry",
+          "Position": "BOTTOM",
+          "Kills": 8,
+          "Deaths": 6,
+          "Assists": 3,
+          "KDA": 1.83,
+          "Victory": false
+        }
+      },
+      "Enemies": {
+        "Spacejayce": {
+          "Champion": "Hecarim",
+          "Lane": "JUNGLE",
+          "Role": "none",
+          "Position": "JUNGLE",
+          "Kills": 6,
+          "Deaths": 5,
+          "Assists": 10,
+          "KDA": 3.2,
+          "Victory": true
+        },
+        "Yasuo But Rocks": {
+          "Champion": "Taliyah",
+          "Lane": "BOT_LANE",
+          "Role": "duo_support",
+          "Position": "SUPPORT",
+          "Kills": 7,
+          "Deaths": 4,
+          "Assists": 10,
+          "KDA": 4.25,
+          "Victory": true
+        },
+        "C9 Dope": {
+          "Champion": "Caitlyn",
+          "Lane": "BOT_LANE",
+          "Role": "duo_carry",
+          "Position": "BOTTOM",
+          "Kills": 4,
+          "Deaths": 3,
+          "Assists": 10,
+          "KDA": 4.67,
+          "Victory": true
+        },
+        "Playin on iWatch": {
+          "Champion": "Akali",
+          "Lane": "MID_LANE",
+          "Role": "solo",
+          "Position": "MIDDLE",
+          "Kills": 9,
+          "Deaths": 6,
+          "Assists": 4,
+          "KDA": 2.17,
+          "Victory": true
+        },
+        "cHigGaYEET": {
+          "Champion": "Darius",
+          "Lane": "TOP_LANE",
+          "Role": "solo",
+          "Position": "TOP",
+          "Kills": 12,
+          "Deaths": 2,
+          "Assists": 4,
+          "KDA": 8.0,
+          "Victory": true
+        }
+      }
+    },
+    "3252293399": {
+      "Allies": {
+        "PokeNinja1432": {
+          "Champion": "Caitlyn",
+          "Lane": "BOT_LANE",
+          "Role": "duo_carry",
+          "Position": "BOTTOM",
+          "Kills": 3,
+          "Deaths": 8,
+          "Assists": 12,
+          "KDA": 1.88,
+          "Victory": false
+        },
+        "mintyOrange": {
+          "Champion": "Bard",
+          "Lane": "BOT_LANE",
+          "Role": "duo_support",
+          "Position": "SUPPORT",
+          "Kills": 6,
+          "Deaths": 9,
+          "Assists": 24,
+          "KDA": 3.33,
+          "Victory": false
+        },
+        "fizzonyourboobs": {
+          "Champion": "Singed",
+          "Lane": "MID_LANE",
+          "Role": "solo",
+          "Position": "MIDDLE",
+          "Kills": 12,
+          "Deaths": 13,
+          "Assists": 14,
+          "KDA": 2.0,
+          "Victory": false
+        },
+        "Beer Bender": {
+          "Champion": "Darius",
+          "Lane": "TOP_LANE",
+          "Role": "solo",
+          "Position": "TOP",
+          "Kills": 15,
+          "Deaths": 7,
+          "Assists": 11,
+          "KDA": 3.71,
+          "Victory": false
+        },
+        "ChummyFountain": {
+          "Champion": "Jarvan IV",
+          "Lane": "JUNGLE",
+          "Role": "none",
+          "Position": "JUNGLE",
+          "Kills": 6,
+          "Deaths": 9,
+          "Assists": 20,
+          "KDA": 2.89,
+          "Victory": false
+        }
+      },
+      "Enemies": {
+        "shtleahy26er": {
+          "Champion": "Xin Zhao",
+          "Lane": "JUNGLE",
+          "Role": "none",
+          "Position": "JUNGLE",
+          "Kills": 7,
+          "Deaths": 7,
+          "Assists": 16,
+          "KDA": 3.29,
+          "Victory": true
+        },
+        "La Pera": {
+          "Champion": "Jinx",
+          "Lane": "BOT_LANE",
+          "Role": "duo_carry",
+          "Position": "BOTTOM",
+          "Kills": 9,
+          "Deaths": 4,
+          "Assists": 17,
+          "KDA": 6.5,
+          "Victory": true
+        },
+        "Chief K19": {
+          "Champion": "Lissandra",
+          "Lane": "MID_LANE",
+          "Role": "solo",
+          "Position": "MIDDLE",
+          "Kills": 15,
+          "Deaths": 11,
+          "Assists": 14,
+          "KDA": 2.64,
+          "Victory": true
+        },
+        "WZ111": {
+          "Champion": "Pyke",
+          "Lane": "BOT_LANE",
+          "Role": "duo_support",
+          "Position": "SUPPORT",
+          "Kills": 7,
+          "Deaths": 10,
+          "Assists": 8,
+          "KDA": 1.5,
+          "Victory": true
+        },
+        "Doomgame": {
+          "Champion": "Tryndamere",
+          "Lane": "TOP_LANE",
+          "Role": "solo",
+          "Position": "TOP",
+          "Kills": 7,
+          "Deaths": 10,
+          "Assists": 12,
+          "KDA": 1.9,
+          "Victory": true
+        }
+      }
+    },
+    "3250859031": {
+      "Allies": {
+        "Desire503": {
+          "Champion": "Jarvan IV",
+          "Lane": "JUNGLE",
+          "Role": "none",
+          "Position": "JUNGLE",
+          "Kills": 2,
+          "Deaths": 2,
+          "Assists": 4,
+          "KDA": 3.0,
+          "Victory": false
+        },
+        "mintyOrange": {
+          "Champion": "Karma",
+          "Lane": "BOT_LANE",
+          "Role": "duo_support",
+          "Position": "SUPPORT",
+          "Kills": 3,
+          "Deaths": 3,
+          "Assists": 3,
+          "KDA": 2.0,
+          "Victory": false
+        },
+        "55 44 2 66 44": {
+          "Champion": "Aphelios",
+          "Lane": "BOT_LANE",
+          "Role": "duo_carry",
+          "Position": "BOTTOM",
+          "Kills": 3,
+          "Deaths": 7,
+          "Assists": 6,
+          "KDA": 1.29,
+          "Victory": false
+        },
+        "hi Im pengy": {
+          "Champion": "Diana",
+          "Lane": "MID_LANE",
+          "Role": "solo",
+          "Position": "MIDDLE",
+          "Kills": 3,
+          "Deaths": 7,
+          "Assists": 2,
+          "KDA": 0.71,
+          "Victory": false
+        },
+        "KhaI Drogo": {
+          "Champion": "Garen",
+          "Lane": "TOP_LANE",
+          "Role": "solo",
+          "Position": "TOP",
+          "Kills": 0,
+          "Deaths": 10,
+          "Assists": 2,
+          "KDA": 0.2,
+          "Victory": false
+        }
+      },
+      "Enemies": {
+        "ThatCanadian": {
+          "Champion": "Jinx",
+          "Lane": "BOT_LANE",
+          "Role": "duo_carry",
+          "Position": "BOTTOM",
+          "Kills": 7,
+          "Deaths": 2,
+          "Assists": 9,
+          "KDA": 8.0,
+          "Victory": true
+        },
+        "Professor Gravez": {
+          "Champion": "Graves",
+          "Lane": "TOP_LANE",
+          "Role": "solo",
+          "Position": "TOP",
+          "Kills": 12,
+          "Deaths": 1,
+          "Assists": 3,
+          "KDA": 15.0,
+          "Victory": true
+        },
+        "Brisk Lemon Tea": {
+          "Champion": "Heimerdinger",
+          "Lane": "MID_LANE",
+          "Role": "solo",
+          "Position": "MIDDLE",
+          "Kills": 3,
+          "Deaths": 0,
+          "Assists": 9,
+          "KDA": 12.0,
+          "Victory": true
+        },
+        "Letum Opifex": {
+          "Champion": "Xerath",
+          "Lane": "BOT_LANE",
+          "Role": "duo_support",
+          "Position": "SUPPORT",
+          "Kills": 5,
+          "Deaths": 4,
+          "Assists": 6,
+          "KDA": 2.75,
+          "Victory": true
+        },
+        "Duhmonik": {
+          "Champion": "Twitch",
+          "Lane": "JUNGLE",
+          "Role": "none",
+          "Position": "JUNGLE",
+          "Kills": 2,
+          "Deaths": 4,
+          "Assists": 11,
+          "KDA": 3.25,
+          "Victory": true
+        }
+      }
+    }
+  }
+}
