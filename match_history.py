@@ -1,79 +1,48 @@
 import json
-import os
-from os import path
-import cassiopeia
-import threading
-import text_colors
-import inflect
-import operator
-import re
-import datapipelines
-import misc
 from queue import Queue
+import concurrent.futures
+
+import cassiopeia
+import datapipelines
+import inflect
+
+import misc
+import text_colors
 
 
 class MatchHistory:
-    def __init__(self, summoner_name=None):
-        if not path.exists("summoner_data"):
-            os.mkdir("summoner_data")
-        if not path.exists("summoner_matchlists"):
-            os.mkdir("summoner_matchlists")
-
-        if path.exists('champion_positions.json'):
-            with open('champion_positions.json', encoding='utf8') as json_file:
-                self.champion_positions = json.load(json_file)
-        else:
-            self.champion_positions = self.generate_champion_position_file()
-        self.new_user = False
-        if summoner_name is not None:
-            self.summoner_filepath = misc.get_filepath(summoner_name.lower(), outside_dir="summoner_data",
-                                                       file_suffix="data.json")
-            if path.exists(self.summoner_filepath):
-                text_colors.print_log("Summoner file located.")
-                with open(self.summoner_filepath, encoding='utf8') as json_file:
-                    self.summoner_data = json.load(json_file)
-            else:
-                text_colors.print_error("Summoner file \"" + self.summoner_filepath + "\" not found.")
-                text_colors.print_log("Creating new user profile...")
-                self.new_user = True
-                self.summoner_data = {
-                    "username": "",
-                    "region": ""
-                }
-                self.summoner_filepath = ""
-        if summoner_name is None:
-            text_colors.print_log("Creating new user profile...")
-            self.new_user = True
+    def __init__(self, summoner_data: [] = None, summoner_filepath=None):
+        if summoner_filepath is not None:
+            self.summoner_data = misc.conditional_open_json(summoner_filepath)
+            if self.summoner_data is None:
+                raise TypeError(summoner_filepath + "does not exist.")
+        elif summoner_data is not None:
             self.summoner_data = {
-                "username": "",
-                "region": ""
+                "username": summoner_data[0],
+                "region": summoner_data[1]
             }
-            self.summoner_filepath = ""
 
-        if path.exists("api_key.txt"):
-            with open("api_key.txt", 'r') as api_key:
-                self.api_key = api_key.readline()
+            if len(summoner_data) != 2:
+                raise TypeError("Argument \"summoner_data\" must be in form [summoner_name, region]")
         else:
-            self.api_key = ""
+            text_colors.print_log("Creating new user profile...")
+            self.summoner_data = None
+        self.summoner_filepath = None
+        misc.makedir("summoner_data")
+        misc.makedir("summoner_matchlists")
 
-            # if path.exists("position_data.json"):
-            # with open('position_data.json', encoding='utf8') as json_file:
-            # self.position_data = json.load(json_file)
-        # else:
-        self.position_data = self.generate_position_data_file()
-        self.regions = ["RU", 'KR', 'BR', 'OCE', 'JP', 'NA', 'EUNE', 'EUW', 'TR', 'LAN', 'LAS']
+        self.api_key = misc.conditional_open("api_key.txt")
+
         self.p = inflect.engine()
         self.cass = cassiopeia
+        self.verify_api_key()
         self.summoner = self.get_summoner()
         self.matchlist_file = misc.get_filepath(self.summoner.name, "summoner_matchlists", "matchlist.json")
-        if path.exists(self.matchlist_file):
-            with open(self.matchlist_file, encoding='utf8') as json_file:
-                self.match_history = json.load(json_file)
 
-    def clean_wrong_positions(self):
-        for match in self.match_history['Matches']:
-            for player in ['Allies', 'Enemies']:
-                if self.match_history['Matches'][match].get('Remake'):
+    def clean_wrong_positions(self, match_history, filepath):
+        for match in match_history['Matches']:
+            for team in ['Blue Team', 'Red Team']:
+                if match_history['Matches'][match].get('Remake'):
                     continue
                 roles = {
                     "TOP": 0,
@@ -83,7 +52,7 @@ class MatchHistory:
                     "SUPPORT": 0,
                 }
                 participants = dict()
-                participants.update(self.match_history['Matches'][match][player])
+                participants.update(match_history['Matches'][match][team])
                 for participant in participants.values():
                     if participant['Position'] != "UNKNOWN":
                         roles[participant['Position']] += 1
@@ -91,78 +60,13 @@ class MatchHistory:
                     if roles[role] > 1:
                         for participant in participants:
                             if participants[participant]['Position'] == role:
-                                self.match_history['Matches'][match][player][participant]['Position'] = "UNKNOWN"
-        with open(self.matchlist_file, 'w') as outfile:
-            json.dump(self.match_history, outfile)
+                                match_history['Matches'][match][team][participant]['Position'] = "UNKNOWN"
+        with open(filepath, 'w') as outfile:
+            json.dump(match_history, outfile)
 
-    def generate_champion_position_file(self):
-        champion_positions = {}
-        for champion in misc.References.champions:
-            champion_positions[champion] = ""
-        with open('champion_positions.json', 'w') as outfile:
-            json.dump(champion_positions, outfile)
-        return champion_positions
-
-    def generate_position_data_file(self):
-        positions = {
-            "TOP": 0,
-            "JUNGLE": 0,
-            "MIDDLE": 0,
-            "BOTTOM": 0,
-            "SUPPORT": 0,
-            "Total": 0,
-            "Percentages": {
-                "TOP_%": 0.0,
-                "JUNGLE_%": 0.0,
-                "MIDDLE_%": 0.0,
-                "BOTTOM_%": 0.0,
-                "SUPPORT_%": 0.0,
-            }
-        }
-        position_data = {}
-        for champion in self.champion_positions:
-            position_data[champion] = {}
-            position_data[champion].update(positions)
-        with open("position_data.json", 'w') as outfile:
-            json.dump(position_data, outfile)
-        return position_data
-
-    def parse_champion_name(self, champion):
-        champion_name = re.sub('[^A-Za-z0-9]+', '', champion).title()
-        if champion_name == "Nunuwillump":
-            champion_name = "Nunu"
-        return champion_name
-
-    def set_champion_positions(self):
-        self.clean_wrong_positions()
-        for match in self.match_history['Matches'].values():
-            if match.get('Remake'):
-                continue
-            participants = dict()
-            participants.update(match['Allies'])
-            participants.update(match['Enemies'])
-            for participant in participants.values():
-                if participant['Position'] != "UNKNOWN":
-                    champion_name = self.parse_champion_name(participant['Champion'])
-                    self.position_data[champion_name][participant['Position']] += 1
-                    self.position_data[champion_name]['Total'] += 1
-        for champion in self.position_data:
-            for role in ["TOP", "JUNGLE", "MIDDLE", "BOTTOM", "SUPPORT"]:
-                percentage = misc.get_percentage(
-                    self.position_data[champion][role],
-                    self.position_data[champion]['Total'])
-                self.position_data[champion]['Percentages'][role + '_%'] = percentage
-            preferred_role = max(self.position_data[champion]['Percentages'].items(),
-                                 key=operator.itemgetter(1))[0].strip('_%')
-            self.champion_positions[champion] = preferred_role
-        with open("champion.json", "w") as outfile:
-            json.dump(self.champion_positions, outfile)
-        with open("position_data.json", "w") as outfile:
-            json.dump(self.position_data, outfile)
-
-    def get_summoner(self):
-        if self.api_key != "":
-            text_colors.print_log("Using api key from summoner file...")
+    def verify_api_key(self):
+        if self.api_key is not None:
+            text_colors.print_log("Using api key from file...")
             self.cass.set_riot_api_key(self.api_key)
         else:
             text_colors.print_error("API key is missing. Please enter a valid API key:")
@@ -182,25 +86,27 @@ class MatchHistory:
                 else:
                     raise
 
-        if self.summoner_data['region'] == "":
-            text_colors.print_log("Please enter your region:\nValid inputs include: " + ', '.join(self.regions))
+    def get_summoner(self):
+        if self.summoner_data is None:
+            text_colors.print_log(
+                "Please enter your region:\nValid inputs include: " + ', '.join(misc.References.regions))
             region = input().upper()
+            text_colors.print_log("Please enter your summoner name:")
+            username = input().lower()
+            self.summoner_data = {
+                "username": "",
+                "region": ""
+            }
+
         else:
             region = self.summoner_data['region'].upper()
-            text_colors.print_log("Using region \"" + region + "\" from summoner file...")
-        while region not in self.regions:
+            username = self.summoner_data['username']
+            text_colors.print_log("Using region \"" + region + "\" and \"" + username + "\"...")
+
+        while region not in misc.References.regions:
             text_colors.print_error("Invalid region.")
-            text_colors.print_log("Valid inputs include: " + ', '.join(self.regions))
+            text_colors.print_log("Valid inputs include: " + ', '.join(misc.References.regions))
             region = input().upper()
-        self.summoner_data['region'] = region
-
-        if self.summoner_data['username'] == "":
-            text_colors.print_log("Please enter your summoner name:")
-            username = input().upper()
-
-        else:
-            username = self.summoner_data['username'].lower()
-            text_colors.print_log("Using username \"" + username + "\" from summoner file...")
 
         result = None
         while result is None:
@@ -215,8 +121,8 @@ class MatchHistory:
                 else:
                     raise
         self.summoner_data['username'] = username
-        if self.new_user:
-            self.summoner_filepath = misc.get_filepath(username.lower(), "summoner_data", "data.json")
+        self.summoner_data['region'] = region
+        self.summoner_filepath = misc.get_filepath(self.summoner_data['username'], "summoner_data", "data.json")
         with open(self.summoner_filepath, 'w') as outfile:
             json.dump(self.summoner_data, outfile)
         with open("api_key.txt", 'w') as outfile:
@@ -230,7 +136,7 @@ class MatchHistory:
             lane = lane.name.upper()
         return lane
 
-    def get_position(self, lane, role, champion):
+    def get_position(self, lane, role):
         lane = self.parse_lane(lane)
         role = role.name.upper()
         if lane == "MID_LANE" and role == "SOLO":
@@ -243,118 +149,107 @@ class MatchHistory:
             return "BOTTOM"
         elif lane == "BOT_LANE" and role == "DUO_SUPPORT":
             return "SUPPORT"
-        elif lane == "NONE" and role == "DUO_SUPPORT":
-            return "SUPPORT"
         else:
             return "UNKNOWN"
 
-    def get_match_history(self, match_count):
+    def get_match_history(self, match_count, filepath=None, summoner=None):
+        if filepath is None:
+            filepath = self.matchlist_file
+        if summoner is None:
+            summoner = self.summoner
+        full_match_history = self.cass.get_match_history(summoner, queues={self.cass.data.Queue.ranked_solo_fives},
+                                                         begin_index=0, end_index=match_count)
 
-        full_match_history = self.cass.get_match_history(self.summoner, queues={self.cass.data.Queue.ranked_solo_fives},
-                                                         begin_index=match_count)
-        match_history = {'Matches': {}}
         result = Queue()
         stop_thread = False
-        update = False
         initial_len = 0
-        if path.exists(self.matchlist_file):
-            text_colors.print_log("Updating existing \"" + self.matchlist_file + "\"...")
-            update = True
-            match_history = json.load(open(self.matchlist_file, encoding="utf8"))
-            initial_len = len(match_history['Matches'])
-            match_thread = threading.Thread(target=self.update_match_history,
-                                            args=(lambda: stop_thread, match_history, full_match_history, result))
-        else:
-            match_thread = threading.Thread(target=self.generate_match_history,
-                                            args=(lambda: stop_thread, match_history, full_match_history, result))
+        match_history = misc.conditional_open_json(filepath)
 
-        text_colors.print_log("Generating Match History (type \"stop\" to quit early)...")
-        match_thread.start()
-        while match_thread.is_alive():
+        if match_history is not None:
+            text_colors.print_log("Updating existing \"" + filepath + "\"...")
+            initial_len = len(match_history['Matches'])
+        else:
+            match_history = {'Matches': {}}
+        text_colors.print_log("Generating match history (type \"stop\" to quit early)...")
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            match_thread = executor.submit(self.generate_match_history, lambda: stop_thread, match_history,
+                                           full_match_history)
+
+        while match_thread.running():
             if input() == "stop":
                 text_colors.print_log("Stopping after current match is recorded...")
                 stop_thread = True
-                match_thread.join()
-                text_colors.print_log("Match History Creation Terminated.")
+                text_colors.print_log("Match history creation terminated.")
                 break
-        if not stop_thread:
-            match_thread.join()
-            text_colors.print_log("Match History Successfully Created.")
+            elif match_thread.done():
+                break
 
-        with open(self.matchlist_file, 'w') as outfile:
-            match_history = result.get()
+        text_colors.print_log("Match history successfully generated.")
+
+        with open(filepath, 'w') as outfile:
+            match_history = match_thread.result()
             json.dump(match_history, outfile)
+        text_colors.print_log(
+            "Successfully logged " + str(len(match_history['Matches'])) + " {matches} into file \"".format(
+                matches=self.p.plural("match", len(match_history['Matches']))) + filepath + "\".")
+        text_colors.print_log(
+            str(len(match_history['Matches']) - initial_len) + " new %s recorded." % self.p.plural(
+                'match', (len(match_history['Matches'])) - initial_len))
 
-        if update:
-            text_colors.print_log(
-                "Successfully logged " + str(len(match_history['Matches'])) + " {matches} into file \"".format(
-                    matches=self.p.plural("match", len(match_history['Matches']))) + self.matchlist_file + "\".")
-            text_colors.print_log(
-                str(len(match_history['Matches']) - initial_len) + " new %s recorded." % self.p.plural(
-                    'match', (len(match_history['Matches'])) - initial_len))
-        else:
-            text_colors.print_log(
-                "Successfully logged " + str(
-                    len(match_history['Matches'])) +
-                " {matches} into file \"".format(matches=self.p.plural('match', len(match_history['Matches']))) +
-                self.matchlist_file + "\".")
+        self.clean_wrong_positions(match_history, filepath)
 
     def add_match_data(self, match, match_history):
         if match.is_remake:
-            text_colors.print_error("Logging remake match " + str(match.id))
+            text_colors.print_error("Logging match as remake...")
             match_history['Matches'][match.id] = {'Remake': True}
             return match_history
-        text_colors.print_log("Begin Recording Match " + str(match.id))
-        user = [participant for participant in match.participants if participant.summoner.name == self.summoner.name][0]
-        allies = [participant for participant in match.participants if participant.team == user.team]
-        enemies = [participant for participant in match.participants if participant.team != user.team]
+        participants = [participant for participant in match.participants]
         match_history['Matches'][match.id] = {}
-        match_history['Matches'][match.id]['Allies'] = {}
-        for ally in allies:
-            match_history['Matches'][match.id]['Allies'][ally.summoner.name] = {}
-            match_history['Matches'][match.id]['Allies'][ally.summoner.name]['Champion'] = ally.champion.name
-            match_history['Matches'][match.id]['Allies'][ally.summoner.name]['Lane'] = self.parse_lane(ally.lane)
-            match_history['Matches'][match.id]['Allies'][ally.summoner.name]['Role'] = ally.role.name
-            match_history['Matches'][match.id]['Allies'][ally.summoner.name]['Position'] = self.get_position(
-                ally.lane, ally.role, ally.champion.name)
-            match_history['Matches'][match.id]['Allies'][ally.summoner.name]['Kills'] = ally.stats.kills
-            match_history['Matches'][match.id]['Allies'][ally.summoner.name]['Deaths'] = ally.stats.deaths
-            match_history['Matches'][match.id]['Allies'][ally.summoner.name]['Assists'] = ally.stats.assists
-            match_history['Matches'][match.id]['Allies'][ally.summoner.name]['KDA'] = round(ally.stats.kda, 2)
-            match_history['Matches'][match.id]['Allies'][ally.summoner.name]['Victory'] = ally.stats.win
-
-        match_history['Matches'][match.id]['Enemies'] = {}
-        for enemy in enemies:
-            match_history['Matches'][match.id]['Enemies'][enemy.summoner.name] = {}
-            match_history['Matches'][match.id]['Enemies'][enemy.summoner.name]['Champion'] = enemy.champion.name
-            match_history['Matches'][match.id]['Enemies'][enemy.summoner.name]['Lane'] = self.parse_lane(enemy.lane)
-            match_history['Matches'][match.id]['Enemies'][enemy.summoner.name]['Role'] = enemy.role.name
-            match_history['Matches'][match.id]['Enemies'][enemy.summoner.name]['Position'] = self.get_position(
-                enemy.lane, enemy.role, enemy.champion.name)
-            match_history['Matches'][match.id]['Enemies'][enemy.summoner.name]['Kills'] = enemy.stats.kills
-            match_history['Matches'][match.id]['Enemies'][enemy.summoner.name]['Deaths'] = enemy.stats.deaths
-            match_history['Matches'][match.id]['Enemies'][enemy.summoner.name]['Assists'] = enemy.stats.assists
-            match_history['Matches'][match.id]['Enemies'][enemy.summoner.name]['KDA'] = round(enemy.stats.kda, 2)
-            match_history['Matches'][match.id]['Enemies'][enemy.summoner.name]['Victory'] = enemy.stats.win
+        match_history['Matches'][match.id]['Blue Team'] = {}
+        match_history['Matches'][match.id]['Red Team'] = {}
+        for participant in participants:
+            if participant.team == match.blue_team:
+                key = 'Blue Team'
+            else:
+                key = 'Red Team'
+            match_history['Matches'][match.id][key][participant.summoner.name] = {}
+            match_history['Matches'][match.id][key][participant.summoner.name].update({
+                'Champion': participant.champion.name,
+                'Lane': self.parse_lane(participant.lane),
+                'Role': participant.role.name.upper(),
+                'Position': self.get_position(participant.lane, participant.role),
+                'Kills': participant.stats.kills,
+                'Deaths': participant.stats.deaths,
+                'Assists': participant.stats.assists,
+                'KDA': round(participant.stats.kda, 2),
+                'Victory': participant.stats.win
+            })
+            '''
+            match_history['Matches'][match.id][key][participant.summoner.name] = {}
+            match_history['Matches'][match.id][key][participant.summoner.name]['Champion'] = participant.champion.name
+            match_history['Matches'][match.id][key][participant.summoner.name]['Lane'] = self.parse_lane(
+                participant.lane)
+            match_history['Matches'][match.id][key][participant.summoner.name]['Role'] = participant.role.name
+            match_history['Matches'][match.id][key][participant.summoner.name]['Position'] = self.get_position(
+                participant.lane, participant.role)
+            match_history['Matches'][match.id][key][participant.summoner.name]['Kills'] = participant.stats.kills
+            match_history['Matches'][match.id][key][participant.summoner.name]['Deaths'] = participant.stats.deaths
+            match_history['Matches'][match.id][key][participant.summoner.name]['Assists'] = participant.stats.assists
+            match_history['Matches'][match.id][key][participant.summoner.name]['KDA'] = round(participant.stats.kda, 2)
+            match_history['Matches'][match.id][key][participant.summoner.name]['Victory'] = participant.stats.win
+            '''
         return match_history
 
-    def update_match_history(self, stop, match_history, full_match_history, result):
+    def generate_match_history(self, stop, match_history, full_match_history):
+        match_no = 1
         for match in full_match_history:
             if match.id not in [int(key) for key in match_history['Matches'].keys()]:
+                text_colors.print_log(
+                    "Begin recording match " + str(match_no) + " of " + str(len(full_match_history)) + "...")
                 match_history = self.add_match_data(match, match_history)
             else:
                 text_colors.print_error("Skipping logged match...")
+            match_no += 1
             if stop():
-                result.put(match_history)
-                return None
-        result.put(match_history)
-        return None
-
-    def generate_match_history(self, stop, match_history, full_match_history, result):
-        for match in full_match_history:
-            match_history = self.add_match_data(match, match_history)
-            if stop():
-                result.put(match_history)
-                return None
-        result.put(match_history)
-        return None
+                break
+        return match_history

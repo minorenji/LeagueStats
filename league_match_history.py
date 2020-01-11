@@ -1,25 +1,45 @@
 import match_history
 import json
+import misc
+import cassiopeia
+import text_colors
+import inflect
+
 
 class LeagueHistory(match_history.MatchHistory):
-    def __init__(self):
-        with open('champion.json', encoding='utf8') as json_file:
-            self.champion_positions = json.load(json_file)
-        with open('summoner_data.json', encoding='utf8') as json_file:
-            self.summoner_data = json.load(json_file)
-        if path.exists("matchlist.json"):
-            with open('matchlist.json', encoding='utf8') as json_file:
-                self.match_history = json.load(json_file)
-
-        #if path.exists("position_data.json"):
-            #with open('position_data.json', encoding='utf8') as json_file:
-                #self.position_data = json.load(json_file)
-        #else:
-        self.position_data = self.generate_position_data_file()
-        self.regions = ["RU", 'KR', 'BR', 'OCE', 'JP', 'NA', 'EUNE', 'EUW', 'TR', 'LAN', 'LAS']
+    def __init__(self, region, league, division, length: int):
         self.p = inflect.engine()
+        self.league = league
+        self.length = length
+        self.division = division
+        misc.makedir("league_matchlists")
+        self.filepath = misc.get_filepath("{league}_{division}".format(league=league, division=division),
+                                          "league_matchlists", "league_matchlist.json")
+        self.region = region.upper()
+        self.api_key = misc.conditional_open("api_key.txt")
         self.cass = cassiopeia
-        self.api_key = ''
-        self.summoner = self.get_summoner()
-        self.full_match_history = self.cass.get_match_history(self.summoner, queues={self.cass.data.Queue.ranked_solo_fives},
-                                                    seasons={self.cass.data.Season.preseason_9, self.cass.Season.season_9})
+        self.verify_api_key()
+        self.league_list = cassiopeia.core.league.LeagueEntries(region=region, tier=league,
+                                                                queue=self.cass.data.Queue.ranked_solo_fives,
+                                                                division=division)
+        self.league_history = misc.conditional_open_json(self.filepath)
+        if self.league_history is None:
+            self.league_history = {'Matches': {}}
+        with open(self.filepath, 'w') as outfile:
+            json.dump(self.league_history, outfile)
+        self.generate_league_history()
+        self.league_history = misc.conditional_open_json(self.filepath)
+
+    def generate_league_history(self):
+        length = len(self.league_history['Matches'])
+        for entry in self.league_list:
+            '''
+            stop = input()
+            if stop == 'stop':
+                exit("League matchlist of length " + str(length) + " created.")
+            '''
+            if length == self.length:
+                break
+            text_colors.print_log("Adding match of summoner \"" + entry.summoner.name + "\"...")
+            self.get_match_history(summoner=entry.summoner, match_count=1, filepath=self.filepath)
+            length += 1

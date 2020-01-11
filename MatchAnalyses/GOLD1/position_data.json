@@ -1,13 +1,13 @@
 {
   "Aatrox": {
-    "TOP": 0,
+    "TOP": 18,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 18,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 100.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
@@ -17,29 +17,29 @@
   "Ahri": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 23,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 23,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Akali": {
-    "TOP": 0,
+    "TOP": 14,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 15,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 29,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 48.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 52.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
@@ -49,26 +49,26 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 6,
+    "Total": 6,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Amumu": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 4,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 4,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -77,45 +77,45 @@
   "Anivia": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 16,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 2,
+    "Total": 18,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 89.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 11.0
     }
   },
   "Annie": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 1,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 2,
+    "Total": 3,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 33.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 67.0
     }
   },
   "Aphelios": {
     "TOP": 0,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 14,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 14,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 100.0,
       "SUPPORT_%": 0.0
     }
   },
@@ -123,43 +123,43 @@
     "TOP": 0,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 21,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 21,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 100.0,
       "SUPPORT_%": 0.0
     }
   },
   "Aurelionsol": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 2,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 2,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Azir": {
-    "TOP": 0,
+    "TOP": 1,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 1,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 2,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 50.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 50.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
@@ -169,14 +169,14 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 12,
+    "Total": 12,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Blitzcrank": {
@@ -184,29 +184,29 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 17,
+    "Total": 17,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Brand": {
     "TOP": 0,
-    "JUNGLE": 0,
-    "MIDDLE": 0,
+    "JUNGLE": 1,
+    "MIDDLE": 1,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 4,
+    "Total": 6,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "JUNGLE_%": 17.0,
+      "MIDDLE_%": 17.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 67.0
     }
   },
   "Braum": {
@@ -214,72 +214,72 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 11,
+    "Total": 11,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Caitlyn": {
     "TOP": 0,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 78,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 78,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 100.0,
       "SUPPORT_%": 0.0
     }
   },
   "Camille": {
-    "TOP": 0,
-    "JUNGLE": 0,
+    "TOP": 12,
+    "JUNGLE": 1,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 2,
+    "Total": 15,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "TOP_%": 80.0,
+      "JUNGLE_%": 7.000000000000001,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 13.0
     }
   },
   "Cassiopeia": {
-    "TOP": 0,
+    "TOP": 3,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 6,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 9,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 33.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 67.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Chogath": {
-    "TOP": 0,
+    "TOP": 13,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 4,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 17,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 76.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 24.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
@@ -287,27 +287,27 @@
   "Corki": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 6,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 6,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Darius": {
-    "TOP": 0,
+    "TOP": 30,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 30,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 100.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
@@ -315,16 +315,16 @@
     }
   },
   "Diana": {
-    "TOP": 0,
-    "JUNGLE": 0,
-    "MIDDLE": 0,
+    "TOP": 2,
+    "JUNGLE": 2,
+    "MIDDLE": 16,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 20,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "TOP_%": 10.0,
+      "JUNGLE_%": 10.0,
+      "MIDDLE_%": 80.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
@@ -333,57 +333,57 @@
     "TOP": 0,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 23,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 23,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 100.0,
       "SUPPORT_%": 0.0
     }
   },
   "Drmundo": {
-    "TOP": 0,
-    "JUNGLE": 0,
+    "TOP": 6,
+    "JUNGLE": 11,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 17,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "TOP_%": 35.0,
+      "JUNGLE_%": 65.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Ekko": {
-    "TOP": 0,
-    "JUNGLE": 0,
-    "MIDDLE": 0,
+    "TOP": 1,
+    "JUNGLE": 36,
+    "MIDDLE": 17,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 54,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "TOP_%": 2.0,
+      "JUNGLE_%": 67.0,
+      "MIDDLE_%": 31.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Elise": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 24,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 24,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -391,14 +391,14 @@
   },
   "Evelynn": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 7,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 7,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -408,41 +408,41 @@
     "TOP": 0,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 21,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 21,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 100.0,
       "SUPPORT_%": 0.0
     }
   },
   "Fiddlesticks": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 7,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 4,
+    "Total": 11,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 64.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 36.0
     }
   },
   "Fiora": {
-    "TOP": 0,
+    "TOP": 24,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 24,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 100.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
@@ -452,72 +452,72 @@
   "Fizz": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 17,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 17,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Galio": {
-    "TOP": 0,
+    "TOP": 1,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 5,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 6,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 17.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 83.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Gangplank": {
-    "TOP": 0,
+    "TOP": 15,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 2,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 17,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 88.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 12.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Garen": {
-    "TOP": 0,
+    "TOP": 17,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 2,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 19,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 89.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 11.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Gnar": {
-    "TOP": 0,
+    "TOP": 4,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 4,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 100.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
@@ -525,15 +525,15 @@
     }
   },
   "Gragas": {
-    "TOP": 0,
-    "JUNGLE": 0,
+    "TOP": 1,
+    "JUNGLE": 9,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 10,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "TOP_%": 10.0,
+      "JUNGLE_%": 90.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -541,58 +541,58 @@
   },
   "Graves": {
     "TOP": 0,
-    "JUNGLE": 0,
-    "MIDDLE": 0,
+    "JUNGLE": 13,
+    "MIDDLE": 2,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 15,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "JUNGLE_%": 87.0,
+      "MIDDLE_%": 13.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Hecarim": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 2,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 2,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Heimerdinger": {
-    "TOP": 0,
+    "TOP": 4,
     "JUNGLE": 0,
-    "MIDDLE": 0,
-    "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "MIDDLE": 3,
+    "BOTTOM": 4,
+    "SUPPORT": 1,
+    "Total": 12,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 33.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "MIDDLE_%": 25.0,
+      "BOTTOM_%": 33.0,
+      "SUPPORT_%": 8.0
     }
   },
   "Illaoi": {
-    "TOP": 0,
+    "TOP": 4,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 4,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 100.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
@@ -600,33 +600,33 @@
     }
   },
   "Irelia": {
-    "TOP": 0,
+    "TOP": 16,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 10,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 26,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 62.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 38.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Ivern": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 4,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 1,
+    "Total": 5,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 80.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 20.0
     }
   },
   "Janna": {
@@ -634,103 +634,103 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 17,
+    "Total": 17,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Jarvaniv": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 18,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 18,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Jax": {
-    "TOP": 0,
-    "JUNGLE": 0,
-    "MIDDLE": 0,
+    "TOP": 27,
+    "JUNGLE": 11,
+    "MIDDLE": 1,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 39,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "TOP_%": 69.0,
+      "JUNGLE_%": 28.000000000000004,
+      "MIDDLE_%": 3.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Jayce": {
-    "TOP": 0,
+    "TOP": 7,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 1,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 8,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 88.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 12.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Jhin": {
-    "TOP": 0,
+    "TOP": 2,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 67,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 69,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 3.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 97.0,
       "SUPPORT_%": 0.0
     }
   },
   "Jinx": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
-    "BOTTOM": 0,
+    "MIDDLE": 1,
+    "BOTTOM": 25,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 26,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "MIDDLE_%": 4.0,
+      "BOTTOM_%": 96.0,
       "SUPPORT_%": 0.0
     }
   },
   "Kaisa": {
-    "TOP": 0,
+    "TOP": 2,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 66,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 68,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 3.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 97.0,
       "SUPPORT_%": 0.0
     }
   },
@@ -738,14 +738,14 @@
     "TOP": 0,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 1,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 1,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 100.0,
       "SUPPORT_%": 0.0
     }
   },
@@ -754,26 +754,26 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 14,
+    "Total": 14,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Karthus": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 4,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 4,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -782,14 +782,14 @@
   "Kassadin": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 11,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 11,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
@@ -797,57 +797,57 @@
   "Katarina": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 22,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 22,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Kayle": {
-    "TOP": 0,
+    "TOP": 9,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 3,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 12,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 75.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 25.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Kayn": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 23,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 23,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Kennen": {
-    "TOP": 0,
+    "TOP": 5,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 5,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 100.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
@@ -856,14 +856,14 @@
   },
   "Khazix": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 24,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 24,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -871,30 +871,30 @@
   },
   "Kindred": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 8,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 8,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Kled": {
-    "TOP": 0,
+    "TOP": 8,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 1,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 9,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 89.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 11.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
@@ -903,42 +903,42 @@
     "TOP": 0,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 3,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 3,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 100.0,
       "SUPPORT_%": 0.0
     }
   },
   "Leblanc": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 17,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 17,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Leesin": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 53,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 53,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -949,43 +949,43 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 44,
+    "Total": 44,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Lissandra": {
-    "TOP": 0,
+    "TOP": 1,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 8,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 9,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 11.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 89.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Lucian": {
-    "TOP": 0,
-    "JUNGLE": 0,
-    "MIDDLE": 0,
-    "BOTTOM": 0,
+    "TOP": 5,
+    "JUNGLE": 1,
+    "MIDDLE": 3,
+    "BOTTOM": 43,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 52,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "TOP_%": 10.0,
+      "JUNGLE_%": 2.0,
+      "MIDDLE_%": 6.0,
+      "BOTTOM_%": 83.0,
       "SUPPORT_%": 0.0
     }
   },
@@ -994,86 +994,86 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 10,
+    "Total": 10,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Lux": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 22,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 8,
+    "Total": 30,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 73.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 27.0
     }
   },
   "Malphite": {
-    "TOP": 0,
-    "JUNGLE": 0,
-    "MIDDLE": 0,
+    "TOP": 12,
+    "JUNGLE": 1,
+    "MIDDLE": 3,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 1,
+    "Total": 17,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "TOP_%": 71.0,
+      "JUNGLE_%": 6.0,
+      "MIDDLE_%": 18.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 6.0
     }
   },
   "Malzahar": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 11,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 11,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Maokai": {
-    "TOP": 0,
+    "TOP": 4,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 3,
+    "Total": 7,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 56.99999999999999,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 43.0
     }
   },
   "Masteryi": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 23,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 23,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -1083,60 +1083,60 @@
     "TOP": 0,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 26,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 26,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 100.0,
       "SUPPORT_%": 0.0
     }
   },
   "Wukong": {
-    "TOP": 0,
-    "JUNGLE": 0,
+    "TOP": 2,
+    "JUNGLE": 1,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 3,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 6,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "TOP_%": 33.0,
+      "JUNGLE_%": 17.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 50.0,
       "SUPPORT_%": 0.0
     }
   },
   "Mordekaiser": {
-    "TOP": 0,
+    "TOP": 16,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 1,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 17,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 94.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 6.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Morgana": {
     "TOP": 0,
-    "JUNGLE": 0,
-    "MIDDLE": 0,
+    "JUNGLE": 1,
+    "MIDDLE": 2,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 20,
+    "Total": 23,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "JUNGLE_%": 4.0,
+      "MIDDLE_%": 9.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 87.0
     }
   },
   "Nami": {
@@ -1144,25 +1144,25 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 52,
+    "Total": 52,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Nasus": {
-    "TOP": 0,
+    "TOP": 1,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 1,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 100.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
@@ -1174,71 +1174,71 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 32,
+    "Total": 32,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Neeko": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 5,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 5,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Nidalee": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 18,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 18,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Nocturne": {
-    "TOP": 0,
-    "JUNGLE": 0,
-    "MIDDLE": 0,
+    "TOP": 4,
+    "JUNGLE": 8,
+    "MIDDLE": 5,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 17,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "TOP_%": 24.0,
+      "JUNGLE_%": 47.0,
+      "MIDDLE_%": 28.999999999999996,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Nunu": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 7,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 7,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -1246,74 +1246,74 @@
   },
   "Olaf": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 23,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 23,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Orianna": {
-    "TOP": 0,
+    "TOP": 2,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 13,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 15,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 13.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 87.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Ornn": {
-    "TOP": 0,
-    "JUNGLE": 0,
+    "TOP": 16,
+    "JUNGLE": 1,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 17,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "TOP_%": 94.0,
+      "JUNGLE_%": 6.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Pantheon": {
-    "TOP": 0,
+    "TOP": 4,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 4,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 1,
+    "Total": 9,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 44.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 44.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 11.0
     }
   },
   "Poppy": {
-    "TOP": 0,
-    "JUNGLE": 0,
+    "TOP": 4,
+    "JUNGLE": 3,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 7,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "TOP_%": 56.99999999999999,
+      "JUNGLE_%": 43.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -1322,42 +1322,42 @@
   "Pyke": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 1,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 17,
+    "Total": 18,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 6.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 94.0
     }
   },
   "Qiyana": {
     "TOP": 0,
-    "JUNGLE": 0,
-    "MIDDLE": 0,
+    "JUNGLE": 3,
+    "MIDDLE": 10,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 13,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "JUNGLE_%": 23.0,
+      "MIDDLE_%": 77.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Quinn": {
-    "TOP": 0,
+    "TOP": 2,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 2,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 100.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
@@ -1369,26 +1369,26 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 16,
+    "Total": 16,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Rammus": {
-    "TOP": 0,
-    "JUNGLE": 0,
+    "TOP": 1,
+    "JUNGLE": 3,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 4,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "TOP_%": 25.0,
+      "JUNGLE_%": 75.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -1396,58 +1396,58 @@
   },
   "Reksai": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 17,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 17,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Renekton": {
-    "TOP": 0,
+    "TOP": 14,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 1,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 15,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 93.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 7.000000000000001,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Rengar": {
-    "TOP": 0,
-    "JUNGLE": 0,
+    "TOP": 5,
+    "JUNGLE": 23,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 28,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "TOP_%": 18.0,
+      "JUNGLE_%": 82.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Riven": {
-    "TOP": 0,
+    "TOP": 14,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 14,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 100.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
@@ -1455,45 +1455,45 @@
     }
   },
   "Rumble": {
-    "TOP": 0,
+    "TOP": 8,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 10,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 18,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 44.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 56.00000000000001,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Ryze": {
-    "TOP": 0,
+    "TOP": 6,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 15,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 21,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 28.999999999999996,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 71.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Sejuani": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 4,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 4,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -1503,71 +1503,71 @@
     "TOP": 0,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "BOTTOM": 14,
+    "SUPPORT": 26,
+    "Total": 40,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "BOTTOM_%": 35.0,
+      "SUPPORT_%": 65.0
     }
   },
   "Shaco": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 14,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 14,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Shen": {
-    "TOP": 0,
+    "TOP": 15,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 1,
+    "Total": 16,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 94.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 6.0
     }
   },
   "Shyvana": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 7,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 7,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Singed": {
-    "TOP": 0,
+    "TOP": 10,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 10,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 100.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
@@ -1575,17 +1575,17 @@
     }
   },
   "Sion": {
-    "TOP": 0,
+    "TOP": 5,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 2,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 7,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 71.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 28.999999999999996,
       "SUPPORT_%": 0.0
     }
   },
@@ -1593,27 +1593,27 @@
     "TOP": 0,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 4,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 4,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 100.0,
       "SUPPORT_%": 0.0
     }
   },
   "Skarner": {
-    "TOP": 0,
-    "JUNGLE": 0,
+    "TOP": 3,
+    "JUNGLE": 6,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 9,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "TOP_%": 33.0,
+      "JUNGLE_%": 67.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -1624,14 +1624,14 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 8,
+    "Total": 8,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Soraka": {
@@ -1639,57 +1639,57 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 45,
+    "Total": 45,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Swain": {
-    "TOP": 0,
+    "TOP": 1,
     "JUNGLE": 0,
-    "MIDDLE": 0,
-    "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "MIDDLE": 1,
+    "BOTTOM": 1,
+    "SUPPORT": 10,
+    "Total": 13,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 8.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "MIDDLE_%": 8.0,
+      "BOTTOM_%": 8.0,
+      "SUPPORT_%": 77.0
     }
   },
   "Sylas": {
-    "TOP": 0,
-    "JUNGLE": 0,
-    "MIDDLE": 0,
+    "TOP": 7,
+    "JUNGLE": 3,
+    "MIDDLE": 8,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 18,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "TOP_%": 39.0,
+      "JUNGLE_%": 17.0,
+      "MIDDLE_%": 44.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Syndra": {
-    "TOP": 0,
+    "TOP": 1,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 14,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 15,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 7.000000000000001,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 93.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
@@ -1699,26 +1699,26 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 2,
+    "Total": 2,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Taliyah": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 2,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 2,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -1727,46 +1727,46 @@
   "Talon": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 8,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 8,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Taric": {
-    "TOP": 0,
+    "TOP": 1,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 5,
+    "Total": 6,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 17.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 83.0
     }
   },
   "Teemo": {
-    "TOP": 0,
+    "TOP": 11,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 1,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 3,
+    "Total": 15,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 73.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 7.000000000000001,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 20.0
     }
   },
   "Thresh": {
@@ -1774,55 +1774,55 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 60,
+    "Total": 60,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Tristana": {
     "TOP": 0,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 16,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 16,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 100.0,
       "SUPPORT_%": 0.0
     }
   },
   "Trundle": {
-    "TOP": 0,
-    "JUNGLE": 0,
+    "TOP": 4,
+    "JUNGLE": 2,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 6,
     "Percentages": {
-      "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "TOP_%": 67.0,
+      "JUNGLE_%": 33.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Tryndamere": {
-    "TOP": 0,
+    "TOP": 10,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 10,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 100.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
@@ -1832,57 +1832,57 @@
   "Twistedfate": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 14,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 14,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Twitch": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 6,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 9,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 15,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 40.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 60.0,
       "SUPPORT_%": 0.0
     }
   },
   "Udyr": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 15,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 15,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Urgot": {
-    "TOP": 0,
+    "TOP": 4,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 4,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 100.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
@@ -1892,73 +1892,73 @@
   "Varus": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
-    "BOTTOM": 0,
+    "MIDDLE": 1,
+    "BOTTOM": 10,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 11,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "MIDDLE_%": 9.0,
+      "BOTTOM_%": 91.0,
       "SUPPORT_%": 0.0
     }
   },
   "Vayne": {
-    "TOP": 0,
+    "TOP": 1,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 29,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 30,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 3.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 97.0,
       "SUPPORT_%": 0.0
     }
   },
   "Veigar": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
-    "BOTTOM": 0,
+    "MIDDLE": 7,
+    "BOTTOM": 3,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 10,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "MIDDLE_%": 70.0,
+      "BOTTOM_%": 30.0,
       "SUPPORT_%": 0.0
     }
   },
   "Velkoz": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 7,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 13,
+    "Total": 20,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 35.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 65.0
     }
   },
   "Vi": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 12,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 12,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -1967,58 +1967,58 @@
   "Viktor": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 11,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 11,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Vladimir": {
-    "TOP": 0,
+    "TOP": 19,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 13,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 32,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 59.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 41.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Volibear": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 5,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 2,
+    "Total": 7,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 71.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 28.999999999999996
     }
   },
   "Warwick": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 18,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 18,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -2028,71 +2028,71 @@
     "TOP": 0,
     "JUNGLE": 0,
     "MIDDLE": 0,
-    "BOTTOM": 0,
+    "BOTTOM": 30,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 30,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "BOTTOM_%": 100.0,
       "SUPPORT_%": 0.0
     }
   },
   "Xerath": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 6,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 7,
+    "Total": 13,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 46.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 54.0
     }
   },
   "Xinzhao": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 7,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 7,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
   },
   "Yasuo": {
-    "TOP": 0,
+    "TOP": 8,
     "JUNGLE": 0,
-    "MIDDLE": 0,
-    "BOTTOM": 0,
+    "MIDDLE": 35,
+    "BOTTOM": 4,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 47,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 17.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
-      "BOTTOM_%": 0.0,
+      "MIDDLE_%": 74.0,
+      "BOTTOM_%": 9.0,
       "SUPPORT_%": 0.0
     }
   },
   "Yorick": {
-    "TOP": 0,
+    "TOP": 4,
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 4,
     "Percentages": {
-      "TOP_%": 0.0,
+      "TOP_%": 100.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
@@ -2104,26 +2104,26 @@
     "JUNGLE": 0,
     "MIDDLE": 0,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 14,
+    "Total": 14,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 100.0
     }
   },
   "Zac": {
     "TOP": 0,
-    "JUNGLE": 0,
+    "JUNGLE": 12,
     "MIDDLE": 0,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 12,
     "Percentages": {
       "TOP_%": 0.0,
-      "JUNGLE_%": 0.0,
+      "JUNGLE_%": 100.0,
       "MIDDLE_%": 0.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
@@ -2132,14 +2132,14 @@
   "Zed": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 13,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 13,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
@@ -2147,14 +2147,14 @@
   "Ziggs": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 2,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 2,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
@@ -2162,29 +2162,29 @@
   "Zilean": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 3,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 12,
+    "Total": 15,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 20.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 80.0
     }
   },
   "Zoe": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 12,
     "BOTTOM": 0,
     "SUPPORT": 0,
-    "Total": 0,
+    "Total": 12,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 100.0,
       "BOTTOM_%": 0.0,
       "SUPPORT_%": 0.0
     }
@@ -2192,16 +2192,16 @@
   "Zyra": {
     "TOP": 0,
     "JUNGLE": 0,
-    "MIDDLE": 0,
+    "MIDDLE": 2,
     "BOTTOM": 0,
-    "SUPPORT": 0,
-    "Total": 0,
+    "SUPPORT": 14,
+    "Total": 16,
     "Percentages": {
       "TOP_%": 0.0,
       "JUNGLE_%": 0.0,
-      "MIDDLE_%": 0.0,
+      "MIDDLE_%": 12.0,
       "BOTTOM_%": 0.0,
-      "SUPPORT_%": 0.0
+      "SUPPORT_%": 88.0
     }
   }
 }

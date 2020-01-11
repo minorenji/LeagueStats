@@ -1,19 +1,59 @@
+import os
+import json
+import re
+
+
 def get_percentage(value, total):
-    return round(value / total, 2) * 100
+    if total == 0:
+        return 0.00
+    else:
+        return round(value / total, 2) * 100
 
 
-def get_filepath(filename, outside_dir=None, file_suffix=None):
+def makedir(path):
+    if not os.path.exists(path):
+        os.mkdir(path)
+
+
+def conditional_open(path):
+    if os.path.exists(path):
+        with open(path, 'r') as text:
+            return text.readline()
+    else:
+        return None
+
+
+def conditional_open_json(path):
+    if os.path.exists(path):
+        with open(path, encoding='utf8') as json_file:
+            return json.load(json_file)
+    else:
+        return None
+
+
+def parse_champion_name(champion):
+    champion_name = re.sub('[^A-Za-z0-9]+', '', champion).title()
+    if champion_name == "Nunuwillump":
+        champion_name = "Nunu"
+    return champion_name
+
+
+def get_filepath(filename, outside_dir=None, file_suffix=None, file_prefix=None):
     if file_suffix is not None:
         file_suffix = "_" + file_suffix
     else:
         file_suffix = ""
+    if file_prefix is not None:
+        file_prefix = file_suffix + "_"
+    else:
+        file_prefix = ""
     if outside_dir is not None:
         outside_dir = outside_dir + "/"
     else:
         outside_dir = ""
-    filepath = "{outside_dir}{filename}{file_suffix}".format(outside_dir=outside_dir,
+    filepath = "{outside_dir}{file_prefix}{filename}{file_suffix}".format(outside_dir=outside_dir,
                                                              filename=filename,
-                                                             file_suffix=file_suffix)
+                                                             file_suffix=file_suffix, file_prefix=file_prefix)
     return filepath
 
 
@@ -33,3 +73,4 @@ class References:
                  'Tryndamere', 'Twistedfate', 'Twitch', 'Udyr', 'Urgot', 'Varus', 'Vayne', 'Veigar', 'Velkoz', 'Vi',
                  'Viktor', 'Vladimir', 'Volibear', 'Warwick', 'Xayah', 'Xerath', 'Xinzhao', 'Yasuo', 'Yorick', 'Yuumi',
                  'Zac', 'Zed', 'Ziggs', 'Zilean', 'Zoe', 'Zyra']
+    regions = ["RU", 'KR', 'BR', 'OCE', 'JP', 'NA', 'EUNE', 'EUW', 'TR', 'LAN', 'LAS']
