@@ -9,6 +9,7 @@ verify_ssl = true
 requests = "*"
 cassiopeia = "*"
 inflect = {file = "https://files.pythonhosted.org/packages/b7/e8/2f9027de74f8ca73efa712b01586c90890d45356a4a138badac69d76eb79/inflect-4.0.0-py2.py3-none-any.whl"}
+keyboard = "*"
 
 [requires]
 python_version = "3.8"

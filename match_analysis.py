@@ -12,11 +12,8 @@ class MatchAnalysis:
         misc.makedir("MatchAnalyses")
         misc.makedir("MatchAnalyses/" + name)
         self.path = "MatchAnalyses/" + name
-        self.champion_positions = misc.conditional_open_json(self.path + '/champion_positions.json')
-        self.champion_positions = self.generate_champion_position_file()
+        self.champion_positions = None
         self.position_data = misc.conditional_open_json(self.path + '/position_data.json')
-        if self.position_data is None:
-            self.position_data = self.generate_position_data_file()
 
     def generate_champion_position_file(self):
         champion_positions = {}
@@ -50,7 +47,30 @@ class MatchAnalysis:
             json.dump(position_data, outfile)
         return position_data
 
-    def set_champion_positions(self):
+    def set_champion_position(self, min_matches):
+        if self.position_data is None:
+            text_colors.print_error("Position data file does not exist.")
+            return None
+        self.champion_positions = self.generate_champion_position_file()
+        text_colors.print_log("Calculating most likely champion positions...")
+        for champion in self.position_data:
+            if self.position_data[champion]['Total'] < min_matches:
+                preferred_role = "UNKNOWN"
+            else:
+                for role in ["TOP", "JUNGLE", "MIDDLE", "BOTTOM", "SUPPORT"]:
+                    percentage = misc.get_percentage(
+                        self.position_data[champion][role],
+                        self.position_data[champion]['Total'])
+                    self.position_data[champion]['Percentages'][role + '_%'] = percentage
+                preferred_role = max(self.position_data[champion]['Percentages'].items(),
+                                     key=operator.itemgetter(1))[0].strip('_%')
+            self.champion_positions[champion] = preferred_role
+        text_colors.print_log("Writing new data to file...")
+        with open(self.path + "/champion_positions.json", "w") as outfile:
+            json.dump(self.champion_positions, outfile)
+
+    def get_position_data(self):
+        self.position_data = self.generate_position_data_file()
         text_colors.print_log("Begin pulling champion data from matchlist \"" + self.name + "\".")
         match_no = 1
         for match in self.matchlist['Matches'].values():
@@ -67,18 +87,7 @@ class MatchAnalysis:
                     self.position_data[champion_name][participant['Position']] += 1
                     self.position_data[champion_name]['Total'] += 1
             match_no += 1
-        text_colors.print_log("Calculating most likely champion positions...")
-        for champion in self.position_data:
-            for role in ["TOP", "JUNGLE", "MIDDLE", "BOTTOM", "SUPPORT"]:
-                percentage = misc.get_percentage(
-                    self.position_data[champion][role],
-                    self.position_data[champion]['Total'])
-                self.position_data[champion]['Percentages'][role + '_%'] = percentage
-            preferred_role = max(self.position_data[champion]['Percentages'].items(),
-                                 key=operator.itemgetter(1))[0].strip('_%')
-            self.champion_positions[champion] = preferred_role
-        text_colors.print_log("Writing new data to files...")
-        with open(self.path + "/champion_positions.json", "w") as outfile:
-            json.dump(self.champion_positions, outfile)
+        text_colors.print_log("Writing new data to file...")
+
         with open(self.path + "/position_data.json", "w") as outfile:
             json.dump(self.position_data, outfile)

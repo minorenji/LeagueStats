@@ -1,6 +1,8 @@
 import os
 import json
 import re
+import cassiopeia
+import text_colors
 
 
 def get_percentage(value, total):
@@ -21,6 +23,36 @@ def conditional_open(path):
             return text.readline()
     else:
         return None
+
+
+def create_cassiopeia():
+    cass = cassiopeia
+    set_api_key(cass)
+    return cass
+
+
+def set_api_key(cass: cassiopeia):
+    api_key = conditional_open("api_key.txt")
+    if api_key is not None:
+        text_colors.print_log("Using api key from file...")
+        cass.set_riot_api_key(api_key)
+    else:
+        text_colors.print_error("API key is missing. Please enter a valid API key:")
+        api_key = input()
+        cass.set_riot_api_key(api_key)
+    result = None
+    while result is None:
+        try:
+            result = cass.get_summoner(name='mintyorange', region='NA').id
+            text_colors.print_log("API key verified.")
+
+        except cassiopeia.datastores.riotapi.common.APIRequestError as err:
+            if '403' in str(err):
+                text_colors.print_error("API key is invalid. Please enter a valid API key:")
+                api_key = input()
+                cass.set_riot_api_key(api_key)
+            else:
+                raise
 
 
 def conditional_open_json(path):
