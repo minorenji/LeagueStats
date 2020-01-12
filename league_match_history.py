@@ -37,14 +37,19 @@ class LeagueHistory:
             self.league_history = {'Matches': {}}
         else:
             text_colors.print_log("Adding to file \"" + self.filepath + "\"...")
+
         initial_len = len(self.league_history['Matches'])
         stop_thread = False
         text_colors.print_log("Begin creating league history (Hold \"ctrl + \\\" to stop early)...")
+
         with concurrent.futures.ThreadPoolExecutor() as executor:
             match_thread = executor.submit(self.generate_league_history)
+
         self.league_history = match_thread.result()
+
         with open(self.filepath, 'w') as outfile:
-            json.dump(self.league_history, outfile)
+            json.dump(self.league_history, outfile, indent=2)
+
         text_colors.print_log("League history file generated.")
         text_colors.print_log(
             "Successfully logged " + str(len(self.league_history['Matches'])) + " {matches} into file \"".format(
