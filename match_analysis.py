@@ -12,7 +12,7 @@ class MatchAnalysis:
         misc.makedir("MatchAnalyses")
         misc.makedir("MatchAnalyses/" + name)
         self.path = "MatchAnalyses/" + name
-        self.champion_positions = None
+        self.champion_positions = self.generate_champion_position_file()
         self.position_data = misc.conditional_open_json(self.path + '/position_data.json')
 
     def generate_champion_position_file(self):

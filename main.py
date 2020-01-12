@@ -30,7 +30,8 @@ if __name__ == "__main__":
     # mintyorange = Summoner(cass, summoner_data=['mintyorange', 'NA'])
     # mintyorange.get_match_history(5)
 
-    league_matchlist = LeagueHistory('NA', 'GOLD', 'I', 500)
-    match_analysis = MatchAnalysis(league_matchlist.league_history, 'GOLD1')
+    league_matchlist = LeagueHistory('NA', 'GOLD', 'I', 1000)
+    league_history = misc.conditional_open_json("league_matchlists/GOLD_I_league_matchlist.json")
+    match_analysis = MatchAnalysis(league_history, 'GOLD1')
     match_analysis.get_position_data()
     match_analysis.set_champion_position(10)
