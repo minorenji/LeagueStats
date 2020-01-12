@@ -44,7 +44,9 @@ class MatchAnalysis:
         if self.position_data is None:
             text_colors.print_error("Position data file does not exist.")
             return None
+
         self.champion_positions = self.generate_champion_position_file()
+
         text_colors.print_log("Calculating most likely champion positions...")
         for champion_name, champion in self.position_data.items():
             champion['Percentages'] = {}
@@ -61,11 +63,14 @@ class MatchAnalysis:
                                      key=operator.itemgetter(1))[0].strip('_%')
             self.champion_positions[champion_name] = preferred_role
             self.position_data[champion_name] = champion
+
         text_colors.print_log("Writing new data to file...")
+
         with open(self.path + "/champion_positions.json", "w") as outfile:
-            json.dump(self.champion_positions, outfile)
+            json.dump(self.champion_positions, outfile, indent=2)
+
         with open(self.path + "/position_data.json", "w") as outfile:
-            json.dump(self.position_data, outfile)
+            json.dump(self.position_data, outfile, indent=2)
 
     def get_position_data(self):
         self.position_data = self.generate_position_data_file()
@@ -85,6 +90,7 @@ class MatchAnalysis:
                     self.position_data[champion_name][participant['Position']] += 1
                     self.position_data[champion_name]['Total'] += 1
             match_no += 1
+
         text_colors.print_log("Writing new data to file...")
 
         with open(self.path + "/position_data.json", "w") as outfile:

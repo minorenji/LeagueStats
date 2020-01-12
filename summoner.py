@@ -70,13 +70,17 @@ class Summoner:
                     self.cass.set_riot_api_key(self.api_key)
                 else:
                     raise
+
         self.summoner_data['username'] = username
         self.summoner_data['region'] = region
         self.summoner_filepath = misc.get_filepath(self.summoner_data['username'], "summoner_data", "data.json")
+
         with open(self.summoner_filepath, 'w') as outfile:
-            json.dump(self.summoner_data, outfile)
+            json.dump(self.summoner_data, outfile, indent=2)
+
         with open("api_key.txt", 'w') as outfile:
             outfile.write(self.api_key)
+
         return self.cass.get_summoner(name=username, region=region)
 
     def get_match_history(self, length):
@@ -86,6 +90,8 @@ class Summoner:
             self.match_history = {'Matches': {}}
         else:
             text_colors.print_log("Adding to file \"" + self.matchlist_file + "\"...")
+
         self.match_history = match_history.get_match_history(self.cass, False, self.match_history, summoner=self.summoner, length=length)
+
         with open(self.matchlist_file, 'w') as outfile:
-            json.dump(self.match_history, outfile)
+            json.dump(self.match_history, outfile, indent=2 )
