@@ -2,9 +2,11 @@ import concurrent.futures
 
 import cassiopeia
 import inflect
-import keyboard
+import misc
+import time
 
 import text_colors
+import keyboard
 
 p = inflect.engine()
 
@@ -59,29 +61,22 @@ def get_position(lane, role):
         return "UNKNOWN"
 
 
+stop_thread = False
+
+
 def get_match_history(cass: cassiopeia, league_history: bool, match_history, summoner, length,
                       logged=None):
-    full_match_history = cass.get_match_history(summoner, queues={cass.data.Queue.ranked_solo_fives})
-    stop_thread = False
+    global stop_thread
+    full_match_history = cass.get_match_history(summoner, queues={cass.data.Queue.ranked_solo_fives}, end_index=100)
 
     initial_len = len(match_history['Matches'])
-    if initial_len == length:
+    if initial_len == length and not league_history:
         text_colors.print_error("File already contains {} matches!".format(length))
         return match_history
     with concurrent.futures.ThreadPoolExecutor() as executor:
         match_thread = executor.submit(generate_match_history, match_history,
-                                       full_match_history, league_history, stop=lambda: stop_thread, length=length, logged=logged)
-        if not league_history:
-            while match_thread.running():
-                if keyboard.is_pressed('shift+`'):
-                    text_colors.print_log("Stopping after current match is recorded...")
-                    stop_thread = True
-                    break
-                elif match_thread.done():
-                    break
-
+                                       full_match_history, league_history, length=length, logged=logged)
     match_history = match_thread.result()
-
     if not league_history:
         text_colors.print_log("Match history successfully generated.")
         text_colors.print_log(
@@ -123,30 +118,38 @@ def add_match_data(match, match_history):
     return match_history
 
 
-def generate_match_history(match_history, full_match_history, league_history, length, stop=None, logged: [bool] = None):
+def generate_match_history(match_history, full_match_history, league_history, length, logged: [bool] = None):
+    global stop_thread
     current_length = len(match_history['Matches'])
     if not league_history:
         match_no = current_length + 1
         text_colors.print_log("Generating match history...")
-        text_colors.print_log("Press \"~\" to end early...")
+        text_colors.print_log("Hold \"ctrl + \\\" to end early...")
     else:
         current_length = 0
         match_no = 0
-    for match in full_match_history:
-        if current_length == length:
-            break
+    match_gen = (match for match in full_match_history)
+    while current_length != length:
+        try:
+            match = next(match_gen)
+        except:
+            return match_history
         if match.id not in [int(key) for key in match_history['Matches'].keys()]:
             if not league_history:
                 text_colors.print_log(
                     "Begin recording match " + str(match_no) + " of " + str(length) + "...")
+            else:
+                text_colors.print_log("Recording match ID: " + str(match.id))
             match_history = add_match_data(match, match_history)
             current_length += 1
+            match_no += 1
         else:
-            text_colors.print_error("Skipping logged match...")
-            if league_history:
-                logged[0] = True
-                return match_history
-        match_no += 1
-        if stop():
-            break
+            text_colors.print_error("Skipping logged match ID {match_id}...".format(match_id=match.id))
+        half_second = time.time() + 0.5
+        if not league_history:
+            print("=" * 50)
+            while time.time() < half_second:
+                if keyboard.is_pressed('ctrl+\\'):
+                    text_colors.print_log("Terminating match history generation...")
+                    return match_history
     return match_history

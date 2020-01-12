@@ -6,6 +6,7 @@ import text_colors
 import inflect
 import concurrent.futures
 import keyboard
+import time
 
 
 class LeagueHistory:
@@ -26,7 +27,7 @@ class LeagueHistory:
                                                                 queue=self.cass.data.Queue.ranked_solo_fives,
                                                                 division=division)
         self.league_history = None
-        self.league_history = self.get_league_history()
+        self.get_league_history()
 
     def get_league_history(self):
         self.league_history = misc.conditional_open_json(self.filepath)
@@ -38,16 +39,9 @@ class LeagueHistory:
             text_colors.print_log("Adding to file \"" + self.filepath + "\"...")
         initial_len = len(self.league_history['Matches'])
         stop_thread = False
-        text_colors.print_log("Begin creating league history (press \"~\" to stop early)...")
+        text_colors.print_log("Begin creating league history (Hold \"ctrl + \\\" to stop early)...")
         with concurrent.futures.ThreadPoolExecutor() as executor:
-            match_thread = executor.submit(self.generate_league_history, stop=lambda: stop_thread)
-            while match_thread.running():
-                if keyboard.is_pressed('shift+`'):
-                    text_colors.print_log("Stopping after current match is recorded...")
-                    stop_thread = True
-                    break
-                elif match_thread.done():
-                    break
+            match_thread = executor.submit(self.generate_league_history)
         self.league_history = match_thread.result()
         with open(self.filepath, 'w') as outfile:
             json.dump(self.league_history, outfile)
@@ -59,23 +53,33 @@ class LeagueHistory:
             str(len(self.league_history['Matches']) - initial_len) + " new %s recorded." % self.p.plural(
                 'match', (len(self.league_history['Matches'])) - initial_len))
 
-    def generate_league_history(self, stop):
+    def generate_league_history(self):
+        league_history = self.league_history
         logged = [False]
         self.length = len(self.league_history['Matches'])
         if self.length == self.full_length:
             text_colors.print_error("Length of current league matchlist is already at length!")
-            return None
-        for entry in self.league_list:
-            if stop() or self.length == self.full_length:
-                break
+            return league_history
+        entry_gen = (entry for entry in self.league_list)
+        while self.length < self.full_length:
+            try:
+                entry = next(entry_gen)
+            except:
+                text_colors.print_error(
+                    "Encountered unexpected error while calling Riot API.\nTerminating matchlist creation")
+                return league_history
+
             text_colors.print_log(
                 "Adding match of summoner \"" + entry.summoner.name + "\" (match {} of {})...".format(self.length,
                                                                                                       self.full_length))
-            self.league_history = match_history.get_match_history(summoner=entry.summoner, cass=self.cass,
-                                                                  league_history=True, length=1,
-                                                                  match_history=self.league_history, logged=logged)
-            if logged[0] is True:
-                logged[0] = False
-            else:
-                self.length += 1
-        return self.league_history
+            league_history = match_history.get_match_history(summoner=entry.summoner, cass=self.cass,
+                                                             league_history=True, length=1,
+                                                             match_history=self.league_history)
+            self.length += 1
+            half_second = time.time() + 0.5
+            print("=" * 50)
+            while time.time() < half_second:
+                if keyboard.is_pressed('ctrl+\\'):
+                    text_colors.print_log("Terminating league history generation...")
+                    return league_history
+        return league_history

@@ -30,14 +30,7 @@ class MatchAnalysis:
             "MIDDLE": 0,
             "BOTTOM": 0,
             "SUPPORT": 0,
-            "Total": 0,
-            "Percentages": {
-                "TOP_%": 0.0,
-                "JUNGLE_%": 0.0,
-                "MIDDLE_%": 0.0,
-                "BOTTOM_%": 0.0,
-                "SUPPORT_%": 0.0,
-            }
+            "Total": 0
         }
         position_data = {}
         for champion in self.champion_positions:
@@ -53,21 +46,26 @@ class MatchAnalysis:
             return None
         self.champion_positions = self.generate_champion_position_file()
         text_colors.print_log("Calculating most likely champion positions...")
-        for champion in self.position_data:
-            if self.position_data[champion]['Total'] < min_matches:
+        for champion_name, champion in self.position_data.items():
+            champion['Percentages'] = {}
+            for role in ["TOP", "JUNGLE", "MIDDLE", "BOTTOM", "SUPPORT"]:
+                percentage = misc.get_percentage(
+                    champion[role],
+                    champion['Total'])
+                champion['Percentages'][role + "_%"] = 0
+                champion['Percentages'][role + "_%"] += percentage
+            if champion['Total'] < min_matches:
                 preferred_role = "UNKNOWN"
             else:
-                for role in ["TOP", "JUNGLE", "MIDDLE", "BOTTOM", "SUPPORT"]:
-                    percentage = misc.get_percentage(
-                        self.position_data[champion][role],
-                        self.position_data[champion]['Total'])
-                    self.position_data[champion]['Percentages'][role + '_%'] = percentage
-                preferred_role = max(self.position_data[champion]['Percentages'].items(),
+                preferred_role = max(champion['Percentages'].items(),
                                      key=operator.itemgetter(1))[0].strip('_%')
-            self.champion_positions[champion] = preferred_role
+            self.champion_positions[champion_name] = preferred_role
+            self.position_data[champion_name] = champion
         text_colors.print_log("Writing new data to file...")
         with open(self.path + "/champion_positions.json", "w") as outfile:
             json.dump(self.champion_positions, outfile)
+        with open(self.path + "/position_data.json", "w") as outfile:
+            json.dump(self.position_data, outfile)
 
     def get_position_data(self):
         self.position_data = self.generate_position_data_file()

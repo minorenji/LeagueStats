@@ -2,11 +2,7 @@
 Program to generate relevant stats based on League of Legends match history, especially about win rates.
 
 TO DO:
-- Compile stats from challenger league
-- Use stats to determine role
-- Combine generate and update match history functions
-- Fix if logic
-- Add optional parameter region to match history
+- If match is already logged during league history generation, use next unlogged match in summoner's history
 """
 
 import cassiopeia
@@ -17,21 +13,18 @@ import misc
 from match_analysis import MatchAnalysis
 from summoner import Summoner
 
-# Main method
+# Main function
 
 if __name__ == "__main__":
-    '''
-    cass = cassiopeia
-    cass.set_riot_api_key('s')
-    print(cass.get_summoner(name='mintyorange', region= 'NA').id)
-    '''
+
     cass = misc.create_cassiopeia()
 
     # mintyorange = Summoner(cass, summoner_data=['mintyorange', 'NA'])
-    # mintyorange.get_match_history(5)
+    # mintyorange.get_match_history(100)
 
-    league_matchlist = LeagueHistory('NA', 'GOLD', 'I', 1000)
+    league_matchlist = LeagueHistory('NA', 'GOLD', 'I', 600)
     league_history = misc.conditional_open_json("league_matchlists/GOLD_I_league_matchlist.json")
     match_analysis = MatchAnalysis(league_history, 'GOLD1')
     match_analysis.get_position_data()
     match_analysis.set_champion_position(10)
+

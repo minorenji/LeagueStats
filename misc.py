@@ -3,13 +3,14 @@ import json
 import re
 import cassiopeia
 import text_colors
+import keyboard
 
 
 def get_percentage(value, total):
     if total == 0:
         return 0.00
     else:
-        return round(value / total, 2) * 100
+        return round((value / total) * 100, 2)
 
 
 def makedir(path):
@@ -23,6 +24,14 @@ def conditional_open(path):
             return text.readline()
     else:
         return None
+
+
+def thread_stopper(thread):
+    while True:
+        if keyboard.is_pressed('shift+`'):
+            return True
+        elif thread.done():
+            break
 
 
 def create_cassiopeia():
@@ -53,6 +62,8 @@ def set_api_key(cass: cassiopeia):
                 cass.set_riot_api_key(api_key)
             else:
                 raise
+    with open("api_key.txt", 'w') as outfile:
+        outfile.write(api_key)
 
 
 def conditional_open_json(path):
@@ -70,6 +81,14 @@ def parse_champion_name(champion):
     return champion_name
 
 
+def wrapper(gen):
+    while True:
+        try:
+            yield next(gen)
+        except:
+            return "error"
+
+
 def get_filepath(filename, outside_dir=None, file_suffix=None, file_prefix=None):
     if file_suffix is not None:
         file_suffix = "_" + file_suffix
@@ -84,8 +103,9 @@ def get_filepath(filename, outside_dir=None, file_suffix=None, file_prefix=None)
     else:
         outside_dir = ""
     filepath = "{outside_dir}{file_prefix}{filename}{file_suffix}".format(outside_dir=outside_dir,
-                                                             filename=filename,
-                                                             file_suffix=file_suffix, file_prefix=file_prefix)
+                                                                          filename=filename,
+                                                                          file_suffix=file_suffix,
+                                                                          file_prefix=file_prefix)
     return filepath
 
 
